@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <div class="jumbotron">
+        <h1>INTERNATIONAL STUDENTS DATABASE</h1>
+        <p class="lead">Here you can view, update, add and delete students in accordance with university guidelines.</p>
+        @using (Html.BeginForm("Index", "Student", FormMethod.Get))
+        {
+            <p><input type="submit" class="btn btn-primary btn-lg" value="Enter" /></p>
+        }
+    </div>
+
+   
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="aboutTitle">
+            <h2 id="aboutTitle">What is the ISDB?</h2>
+            <p>
+                International Students Database is a powerful application and tool created by the university which
+                allows for staff to dynamically monitor international students enrolled at the university.
+            </p>
+            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </section>
+        <section class="col-md-4" aria-labelledby="learn">
+            <h2 id="learn">User Manual</h2>
+            <p>If you are new to the tool, or feel like you need a brush up we have a user manual available at the following link. Please feel
+            free to read about completing operations within the application and alternative functions.</p>
+            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </section>
+        <section class="col-md-4" aria-labelledby="secure">
+            <h2 id="secure">Security is Important!</h2>
+            <p>It is of extreme importance that this application remains secure in all aspects, for the benefit of the universities
+            reputation of upholding integrity, and also the international students personal information that trust us with their personal information.
+            Read more at the following link.</p>
+            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </section>
+    </div>
+</main>
